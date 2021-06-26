@@ -2,10 +2,13 @@ graph yt {
 graph [splines="spline", overlap="prism"]
 node [shape=box, style=filled, fillcolor=white];
 
+edge [len=1];
+
 node [fillcolor="#00cdcd"];
 "Vsauce" [href="https://youtube.com/c/vsauce1"];
 "Numberphile" [href="https://youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A"];
 "Computerphile" [href="https://youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA"];
+"OfflineTV" [href="https://www.youtube.com/c/OfflineTVgg/channels"];
 "Periodic Videos" [href="https://www.youtube.com/user/periodicvideos"];
 "Sixty Symbols" [href="https://www.youtube.com/user/sixtysymbols"];
 "Matt and Tom" [href="https://youtube.com/c/mattandtom"];
@@ -14,6 +17,7 @@ node [fillcolor="#00cdcd"];
 "A Conversation With" [href="https://www.youtube.com/c/ACW/about"];
 "Karmaland 1" [href="https://www.youtube.com/watch?v=_u3NH5yGZt0&list=PLSbDMtNBmYTtx23xKzeq756HGYRB11BCU"];
 "The Official Podcast" [href="https://www.youtube.com/watch?v=Rg68p_PdjfU&list=PLRD7N-Zrj2DMPlFktUo5BRduSyCxu8nZy"];
+"Los Compas" [label="\"Los Compas\" (Mikecrack)",href="https://www.youtube.com/c/Mikecrack/channels"];
 
 node [fillcolor="#00ee00"];
 "Sep 17th 2020\nAmongus stream" [href="https://www.youtube.com/watch?v=74uCF8Xr6WA",label="Sep 17th 2020\nAmongus stream"];
@@ -27,6 +31,7 @@ node [fillcolor="#00ee00"];
 "$100,000 Dream vs Technoblade Duel!" [href="https://www.youtube.com/watch?v=zVCs9Cug_qM"];
 "If I get kidnapped, the video ends (Ft. Mis Amigos)" [href="https://www.youtube.com/watch?v=6sCf3Oytiso"];
 "MAKING CURSED ART WITH THE BOYS" [href="https://www.youtube.com/watch?v=812LqhpuBw4"];
+"I got 13 SkyBlock YouTubers to steal items from eachother" [label="\"I got 13 SkyBlock YouTubers to steal items from eachother\"", href="https://www.youtube.com/watch?v=vwuIeHFtj9w"];
 
 
 
@@ -61,10 +66,10 @@ node [fillcolor="#ffffff"];
 "The Official Podcast" -- "moistcritical";
 "The Official Podcast" -- "belledelphine" [href="https://www.youtube.com/watch?v=Rg68p_PdjfU"];
 "Willyrex" [href="https://youtube.com/channel/UC8rNKrqBxJqL9izOOMxBJtw"];
-"Karmaland 1" -- "Willyrex";
-"Karmaland 1" -- "Vegetta777";
+"Karmaland 1" -- "Willyrex" [len=0.5];
+"Karmaland 1" -- "Vegetta777" [len=0.5];
+"Karmaland 1" -- "aLeXBY11" [len=0.5];
 "aLeXBY11" [href="https://youtube.com/channel/UCh715KhLM7vbOwozSXLWI_w"];
-"Karmaland 1" -- "aLeXBY11";
 "I spent a day with youtube's biggest legends" -- "PewDiePie";
 "Germán Garmendia" [href="https://youtube.com/c/juegagerman"];
 "I spent a day with youtube's biggest legends" -- "Germán Garmendia";
@@ -80,6 +85,9 @@ node [fillcolor="#ffffff"];
 "xQcOw" [href="https://youtube.com/c/xqcow"];
 "Sep 17th 2020\nAmongus stream" -- "xQcOw";
 "Tom Scott" [href="https://youtube.com/c/tomscottgo"];
+"Sep 17th 2020\nAmongus stream" -- "Valkyrae";
+"Sep 17th 2020\nAmongus stream" -- "Michael Reeves";
+"Sep 17th 2020\nAmongus stream" -- "LilyPichu";
 "Let's Play: Bar Billiards" -- "Tom Scott";
 "Matt Parker" [href="https://youtube.com/channel/UCSju5G2aFaWMqn-_0YBtq5A"];
 "Let's Play: Bar Billiards" -- "Matt Parker";
@@ -121,7 +129,7 @@ node [fillcolor="#ffffff"];
 "Peter Curry" -- "Matt and Tom" [href="https://www.youtube.com/watch?v=KCR2kHrr4oA"];
 "Matt Parker" -- "Numberphile" [href="https://www.youtube.com/watch?v=ZMkIiFs35HQ"];
 "Matt Parker" -- "The three utilities puzzle with math/science YouTubers";
-"Matt Parker" -- "Steve Mould" [href="https://www.youtube.com/watch?v=b-Fa6HtvGtQ"];
+"Matt Parker" -- "Steve Mould" [href="https://www.youtube.com/watch?v=b-Fa6HtvGtQ",len=0.5];
 "Steve Mould" -- "The three utilities puzzle with math/science YouTubers";
 "Mark Rober" [href="https://youtube.com/c/markrober"];
 "William Osman" [href="https://youtube.com/c/williamosman"];
@@ -248,5 +256,61 @@ node [fillcolor="#ffffff"];
 "Alpharad" -- "Jaiden" [href="https://www.youtube.com/watch?v=864UBq8HpBY"];	
 
 "DanPlan" -- "TheOdd1sOut" [href="https://www.youtube.com/watch?v=txFEMT-3zSc"];
+"DanPlan" -- "Jaiden" [href="https://www.youtube.com/watch?v=rwTgTavzO3o"];
+
+"Mikecrack" -- "Plech" [href="https://www.youtube.com/watch?v=CLHyVRGGPYA"];
+"Plech" -- "Magnum" [href="https://www.youtube.com/watch?v=HpgpG9bU4XY"];
+"Magnum" -- "CarloJuega" [href="https://www.youtube.com/watch?v=3U_p1TqfPEI"];
+
+// These ones are especially close together
+edge [len=0.1];
+
+"Los Compas" -- "Mikecrack";
+"Los Compas" -- "ElTrollino";
+"Los Compas" -- "RaptorGamer";
+"Los Compas" -- "Sparta356";
+"Los Compas" -- "Timba Vk";
+"Los Compas" -- "Invictor";
+"Los Compas" -- "Acenix";
+"Los Compas" -- "RiusPlay";
+"Los Compas" -- "elmayo97";
+"Los Compas" -- "FranciscoGames";
+"Los Compas" -- "RamCore";
+"Los Compas" -- "Alexy";
+edge [len=1];
+
+// OfflineTV members
+"OfflineTV" -- "LilyPichu";
+"OfflineTV" -- "Pokimane";
+"OfflineTV" -- "Scarra";
+"OfflineTV" -- "DisguisedToast";
+"OfflineTV" -- "Michael Reeves";
+
+"FlexVega" -- "Sparta356" [href="https://www.youtube.com/watch?v=EMoEJ0svMgc"];
+
+"im a squid kid" -- "Technoblade" [href="https://www.youtube.com/watch?v=7Gaez8z6n1c"];
+
+"I got 13 SkyBlock YouTubers to steal items from eachother" -- "TimeDeo";
+"I got 13 SkyBlock YouTubers to steal items from eachother" -- "im a squid kid";
+"I got 13 SkyBlock YouTubers to steal items from eachother" -- "ThirtyVirus";
+
+"Technoblade" -- "gamerboy80" [href="https://www.youtube.com/watch?v=op51XiuFNI0"];	
+"Zyph" -- "gamerboy80" [href="https://www.youtube.com/watch?v=MGz2wr5jG_I"];
+"Zyph" -- "Target3DGaming" [href="https://www.youtube.com/channel/UCrn2yLDykyswskClZNfUHXw"];
+"Mikecrack" -- "Svennoss" [href="https://www.youtube.com/watch?v=aGKxZFyw96M"];
+"Svennoss" -- "dakotaz" [href="https://www.youtube.com/watch?v=fOhbDjMw_VU"];
+"Los Compas" -- "Willyrex" [href="https://www.youtube.com/watch?v=wiw0o1VGJ0M",len=2]
+
+"dakotaz" -- "Toast" [href="https://www.youtube.com/watch?v=psm5H5jRoEE"];
+"dakotaz" -- "5up" [href="https://www.youtube.com/watch?v=psm5H5jRoEE"];
+"dakotaz" -- "Hafu" [href="https://www.youtube.com/watch?v=psm5H5jRoEE"];
+"dakotaz" -- "Corpse" [href="https://www.youtube.com/watch?v=lNNH_Gv_eq0"];
+"dakotaz" -- "jacksepticeye" [href="https://www.youtube.com/watch?v=lNNH_Gv_eq0"];
+"dakotaz" -- "Sykkuno" [href="https://www.youtube.com/watch?v=lNNH_Gv_eq0"];
+
+"Dream" -- "Corpse" [href="https://www.youtube.com/watch?v=yVW-yTsRDB4"];
+
+
 
 }
+
